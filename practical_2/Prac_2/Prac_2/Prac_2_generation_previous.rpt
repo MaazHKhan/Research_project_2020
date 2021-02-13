@@ -1,0 +1,54 @@
+Info: Starting: Create simulation model
+Info: qsys-generate D:\Documents\Semester_2_2020\EES_424\Practicals\practical_2\Prac_2\Prac_2.qsys --simulation=VHDL --allow-mixed-language-simulation --output-directory=D:\Documents\Semester_2_2020\EES_424\Practicals\practical_2\Prac_2\Prac_2\simulation --family="Cyclone V" --part=5CSEMA4U23C6
+Progress: Loading Prac_2/Prac_2.qsys
+Progress: Reading input file
+Progress: Adding rs232_0 [altera_up_avalon_rs232 17.1]
+Progress: Parameterizing module rs232_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: Prac_2: Generating Prac_2 "Prac_2" for SIM_VHDL
+Info: rs232_0: Starting Generation of RS232 UART
+Error: rs232_0: The input clock frequency must be known at generation time.
+Warning: rs232_0: No files generated for fileset SIM_VHDL
+Info: rs232_0: "Prac_2" instantiated altera_up_avalon_rs232 "rs232_0"
+Info: Prac_2: Done "Prac_2" with 2 modules, 1 files
+Error: qsys-generate failed with exit code 1: 1 Error, 1 Warning
+Info: Finished: Create simulation model
+Info: Starting: Create Modelsim Project.
+Info: sim-script-gen --spd=D:\Documents\Semester_2_2020\EES_424\Practicals\practical_2\Prac_2\Prac_2\Prac_2.spd --output-directory=D:/Documents/Semester_2_2020/EES_424/Practicals/practical_2/Prac_2/Prac_2/simulation/ --use-relative-paths=true
+Info: Doing: ip-make-simscript --spd=D:\Documents\Semester_2_2020\EES_424\Practicals\practical_2\Prac_2\Prac_2\Prac_2.spd --output-directory=D:/Documents/Semester_2_2020/EES_424/Practicals/practical_2/Prac_2/Prac_2/simulation/ --use-relative-paths=true
+Info: Generating the following file(s) for MODELSIM simulator in D:/Documents/Semester_2_2020/EES_424/Practicals/practical_2/Prac_2/Prac_2/simulation/ directory:
+Info: 	mentor/msim_setup.tcl
+Info: Skipping VCS script generation since VHDL file $QUARTUS_INSTALL_DIR/eda/sim_lib/altera_syn_attributes.vhd is required for simulation
+Info: Generating the following file(s) for VCSMX simulator in D:/Documents/Semester_2_2020/EES_424/Practicals/practical_2/Prac_2/Prac_2/simulation/ directory:
+Info: 	synopsys/vcsmx/synopsys_sim.setup
+Info: 	synopsys/vcsmx/vcsmx_setup.sh
+Info: Generating the following file(s) for NCSIM simulator in D:/Documents/Semester_2_2020/EES_424/Practicals/practical_2/Prac_2/Prac_2/simulation/ directory:
+Info: 	cadence/cds.lib
+Info: 	cadence/hdl.var
+Info: 	cadence/ncsim_setup.sh
+Info: Generating the following file(s) for RIVIERA simulator in D:/Documents/Semester_2_2020/EES_424/Practicals/practical_2/Prac_2/Prac_2/simulation/ directory:
+Info: 	aldec/rivierapro_setup.tcl
+Info: For information on how to simulate your IP, see the explanatory comments in the simulator-specific subdirectories under D:/Documents/Semester_2_2020/EES_424/Practicals/practical_2/Prac_2/Prac_2/simulation/.
+Info: Regenerate these scripts whenever you make any change to any Quartus-generated IP in your project.
+Info: Finished: Create Modelsim Project.
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: qsys-generate D:\Documents\Semester_2_2020\EES_424\Practicals\practical_2\Prac_2\Prac_2.qsys --synthesis=VHDL --output-directory=D:\Documents\Semester_2_2020\EES_424\Practicals\practical_2\Prac_2\Prac_2\synthesis --family="Cyclone V" --part=5CSEMA4U23C6
+Progress: Loading Prac_2/Prac_2.qsys
+Progress: Reading input file
+Progress: Adding rs232_0 [altera_up_avalon_rs232 17.1]
+Progress: Parameterizing module rs232_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: Prac_2: Generating Prac_2 "Prac_2" for QUARTUS_SYNTH
+Info: rs232_0: Starting Generation of RS232 UART
+Error: rs232_0: The input clock frequency must be known at generation time.
+Info: rs232_0: "Prac_2" instantiated altera_up_avalon_rs232 "rs232_0"
+Info: Prac_2: Done "Prac_2" with 2 modules, 6 files
+Error: qsys-generate failed with exit code 1: 1 Error, 0 Warnings
+Info: Finished: Create HDL design files for synthesis

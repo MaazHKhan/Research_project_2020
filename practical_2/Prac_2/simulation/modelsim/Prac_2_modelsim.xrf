@@ -1,0 +1,13 @@
+vendor_name = ModelSim
+source_file = 1, D:/Documents/Semester_2_2020/EES_424/Practicals/practical_2/Prac_2/Prac_2.vhd
+source_file = 1, D:/Documents/Semester_2_2020/EES_424/Practicals/practical_2/Prac_2/Prac_2_2.vhd
+source_file = 1, c:/intelfpga_lite/20.1/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
+source_file = 1, c:/intelfpga_lite/20.1/quartus/libraries/vhdl/ieee/prmtvs_p.vhd
+source_file = 1, c:/intelfpga_lite/20.1/quartus/libraries/vhdl/ieee/timing_b.vhd
+source_file = 1, c:/intelfpga_lite/20.1/quartus/libraries/vhdl/ieee/timing_p.vhd
+source_file = 1, D:/Documents/Semester_2_2020/EES_424/Practicals/practical_2/Prac_2/db/Prac_2.cbx.xml
+design_name = Prac_2
+instance = comp, \Tx_pin~output\, Tx_pin~output, Prac_2, 1
+instance = comp, \rst~input\, rst~input, Prac_2, 1
+instance = comp, \clk~input\, clk~input, Prac_2, 1
+instance = comp, \~QUARTUS_CREATED_GND~I\, ~QUARTUS_CREATED_GND~I, Prac_2, 1

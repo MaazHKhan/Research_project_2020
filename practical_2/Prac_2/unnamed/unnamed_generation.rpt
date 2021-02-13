@@ -1,0 +1,30 @@
+Info: Starting: Create block symbol file (.bsf)
+Info: qsys-generate D:\Documents\Semester_2_2020\EES_424\Practicals\practical_2\Prac_2\unnamed.qsys --block-symbol-file --output-directory=D:\Documents\Semester_2_2020\EES_424\Practicals\practical_2\Prac_2\unnamed --family="Cyclone V" --part=5CSEMA4U23C6
+Progress: Loading Prac_2/unnamed.qsys
+Progress: Reading input file
+Progress: Adding rs232_0 [altera_up_avalon_rs232 17.1]
+Progress: Parameterizing module rs232_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: qsys-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: qsys-generate D:\Documents\Semester_2_2020\EES_424\Practicals\practical_2\Prac_2\unnamed.qsys --synthesis=VHDL --output-directory=D:\Documents\Semester_2_2020\EES_424\Practicals\practical_2\Prac_2\unnamed\synthesis --family="Cyclone V" --part=5CSEMA4U23C6
+Progress: Loading Prac_2/unnamed.qsys
+Progress: Reading input file
+Progress: Adding rs232_0 [altera_up_avalon_rs232 17.1]
+Progress: Parameterizing module rs232_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: unnamed: Generating unnamed "unnamed" for QUARTUS_SYNTH
+Info: rs232_0: Starting Generation of RS232 UART
+Error: rs232_0: The input clock frequency must be known at generation time.
+Info: rs232_0: "unnamed" instantiated altera_up_avalon_rs232 "rs232_0"
+Info: unnamed: Done "unnamed" with 2 modules, 6 files
+Error: qsys-generate failed with exit code 1: 1 Error, 0 Warnings
+Info: Finished: Create HDL design files for synthesis

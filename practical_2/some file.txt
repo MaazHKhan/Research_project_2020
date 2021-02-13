@@ -1,0 +1,506 @@
+----library IEEE;
+----use IEEE.STD_LOGIC_1164.ALL;
+----use IEEE.STD_LOGIC_ARITH.ALL;
+----use IEEE.STD_LOGIC_UNSIGNED.ALL;
+----use IEEE.STD_LOGIC_SIGNED.ALL;
+----use IEEE.NUMERIC_STD.all;
+----
+----entity Prac_2 is
+----port(
+----
+------	A0,A1,A2,A3,B0,B1,B2,B3		: in std_logic;
+------	comp								: out std_logic;
+------	D7,D6,D5,D4,D3,D2,D1,D0    : in std_logic;
+------	S1 							   : in std_logic_vector(2 downto 0);
+------	M1 						      : out std_logic;
+------	
+------	C7,C6,C5,C4,C3,C2,C1,C0    : in std_logic;
+------	S2 							   : in std_logic_vector(2 downto 0);
+------	M2 						      : out std_logic;
+----
+----	CLOCK_50_in   					: in std_logic;		-- assign to 50MHz clock signal pin
+----	EN									: in		std_logic;		-- assign to switch to enable sending
+----	TXPIN								: out   std_logic:= '1' );-- assign to pin to tx uart
+----end Prac_2;
+----
+----
+----
+----
+----architecture behave of Prac_2 is
+------variable declaration
+----type states is (st0,st1,st2,st3);
+----signal cur_state, next_state: states;
+----
+----
+----
+----
+----
+----begin
+--
+----end behave;
+--
+--library IEEE;
+--use IEEE.STD_LOGIC_1164.ALL;
+--use IEEE.STD_LOGIC_ARITH.ALL;
+--use IEEE.STD_LOGIC_UNSIGNED.ALL;
+--use IEEE.STD_LOGIC_SIGNED.ALL;
+--use IEEE.NUMERIC_STD.all;
+--
+--entity Prac_2 is
+--port(
+--
+----	A0,A1,A2,A3,B0,B1,B2,B3		: in std_logic;
+----	comp								: out std_logic;
+----	D7,D6,D5,D4,D3,D2,D1,D0    : in std_logic;
+----	S1 							   : in std_logic_vector(2 downto 0);
+----	M1 						      : out std_logic;
+----	
+----	C7,C6,C5,C4,C3,C2,C1,C0    : in std_logic;
+----	S2 							   : in std_logic_vector(2 downto 0);
+----	M2 						      : out std_logic;
+--
+--	CLOCK_50_in,reset  					: in std_logic;		-- assign to 50MHz clock signal pin
+--	state_input 				: in std_logic_vector (0 to 1);
+--	comb_out					: out std_logic_vector (0 to 1);
+--	EN							: in std_logic;		-- assign to switch to enable sending
+--	TXPIN						: out std_logic:= '1' );-- assign to pin to tx uart
+--end Prac_2;
+--
+--
+--
+--
+--architecture behave of Prac_2 is
+----variable declaration
+--type states is (st0,st1,st2,st3);
+--signal cur_state, next_state: states;
+--
+--begin
+--	reg: process (reset,CLOCK_50_in)
+--	begin
+--		if reset = '1' then
+--			cur_state <= st0;
+--		elsif rising_edge (CLOCK_50_in) then
+--			cur_state <= next_state; -- transistion on clock
+--		end if;
+--	end process;
+--	
+--	transition: process(cur_state, state_input)
+--	begin
+--		case cur_state is 
+--			when st0 =>
+--				comb_out <= "00";
+--				if state_input = "11" then
+--				   next_state <= st0;
+--				else
+--				    next_state <= st1;
+--				end if;
+--				
+----			when st1 =>
+----				comb_out <= "01";
+----				if state_input = "11" then
+----				   next_state <= st1;
+----				else
+----				    next_state <= st2;
+----				end if;	
+----				
+----			when st2 =>
+----				comb_out <= "10";
+----				if state_input = "11" then
+----				   next_state <= st2;
+----				else
+----				    next_state <= st3;
+----				end if;		
+----			
+----			when st3 =>
+----				comb_out <= "11";
+----				if state_input = "11" then
+----				   next_state <= st3;
+----				else
+----				    next_state <= st0;
+----				end if;			
+--		end case;			
+--	end process;
+--end behave;
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+----
+----process(D7,D6,D5,D4,D3,D2,D1,D0,S1)
+----begin
+----case(S1) is 
+----	 when "111" => M1<=D7;
+----	 when "110" => M1<=D6;
+----	 when "101" => M1<=D5;
+----	 when "100" => M1<=D4;
+----	 when "011" => M1<=D3;
+----	 when "010" => M1<=D2;
+----	 when "001" => M1<=D1;
+----	 when "000" => M1<=D0;
+----	 when others => M1<=D0;
+----end case;
+----end process;
+----end MUX1;
+----
+----
+----
+----architecture MUX2 of Prac_2 is
+----begin
+----
+----process(C7,C6,C5,C4,C3,C2,C1,C0,S2)
+----begin
+----case(S2) is 
+----	 when "111" => M2<=C7;
+----	 when "110" => M2<=C6;
+----	 when "101" => M2<=C5;
+----	 when "100" => M2<=C4;
+----	 when "011" => M2<=C3;
+----	 when "010" => M2<=C2;
+----	 when "001" => M2<=C1;
+----	 when "000" => M2<=C0;
+----	 when others => M2<=C0;
+----end case;
+----end process;
+----end MUX2;
+----
+----
+----architecture comparator of Prac_2 is
+----begin
+----process (A0,A1,A2,A3,B0,B1,B2,B3)
+----begin
+----comp <=  (A3 xnor B3) AND (A2 xnor B2) AND (A1 XNOR B1) AND (A0 XNOR B0);
+----end process;
+----end;
+----
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+----architecture MUX_1 of Prac_2 is
+----begin
+----	 with SEL_1 select
+----			MX_OUT_1 <= D7 when "111",
+----							D6 when "110",
+----							D5 when "101",
+----							D4 when "100",
+----							D3 when "011",
+----							D2 when "010",
+----							D1 when "001",
+----							D0 when "000",
+----							'0' when others;
+----end MUX_1;
+----
+--
+--
+--
+--
+----architecture hendrik of Prac_2 is
+----signal u1 : unsigned (3 downto 0);
+----signal s1, s2, s3 : signed (3 downto 0);
+----signal i1, i2 : integer;
+----
+----
+------Signal InA	:	REAL;
+------Signal InB	:	INTEGER;
+------Signal OUT1	:	REAL;
+----
+----begin
+----PROCESS(CLOCK_50_in)
+----begin
+----u1 <= "0101";
+----i1 <= 6;
+----i2 <= -2;
+----wait for 10 ns;
+----s1 <= conv_signed(u1, 4);   -- = "0101" = +5
+----s2 <= conv_signed(i1, 4);   -- = "0110" = +6
+----s3 <= conv_signed(i2, 4);   -- = "1110" = -2
+----
+------	InA <= 2.25; 
+------	InB <= TO_INTEGER(InA); 
+----end process;
+----	end hendrik;
+
+
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity Prac_2 is
+	generic (
+		clk_per_bit	:	integer := 435
+	);
+	port (
+		clk		:	in		std_logic;		-- 50MHz clock
+		enable	:	in		std_logic ;
+		tx			:	out	std_logic;
+		led		:	out	std_logic_vector(7 downto 0)
+	);
+end Prac_2;
+
+architecture transmitter_arch of Prac_2 is
+
+	type state_type is (ST0, ST1, ST2, ST3, FUNC);
+	signal ps				: state_type := ST0;
+	
+	signal tx_data			: std_logic_vector(31 downto 0);
+	signal Z					: std_logic_vector(3 downto 0);
+	signal clk_counter	: integer range 0 to clk_per_bit-1;
+	signal bit_counter	: integer range 0 to 15 := 0;
+	
+	signal a					: integer range -524288 to 524288;
+	signal b					: integer;
+	signal c					: integer;
+	
+	type item is (ITS, ITA, ITB, ITC);
+	signal it				: item := ITS;
+
+begin
+
+	tx_proc: process(clk)
+	begin
+	report "Hello I am running before going to states.";
+		if (rising_edge(clk)) then
+		report "Hello I am running in state 0.";
+			case ps is
+			
+				-- idle
+				when ST0 =>
+					tx <= '1';
+					clk_counter <= 0;
+					bit_counter <= 0;
+					a <= -524288;
+					b <= 0;
+					c <= 0;
+					ps <= FUNC;
+					
+					-- if (enable = '0') then
+						-- ps <= FUNC;
+					-- else
+						-- ps <= ST0;
+					-- end if;
+					
+				-- function state
+				when FUNC =>
+					case it is
+						-- start the transmission with 0xFF
+						when ITS =>
+							ps <= ST1;
+							tx_data <= "11111111111111111111111111111111";
+							it <= ITA;
+							--report "Hello I am running.";
+						-- send the first value
+						when ITA =>
+							
+							if (a < 524288) then
+								a <= a + 1;
+								ps <= ST1;
+							else
+								a <= -524288;
+								ps <= ST0;
+							end if;
+							tx_data <= std_logic_vector(to_unsigned(a, tx_data'length));
+							it <= ITB;
+						-- send the second value
+						when ITB =>
+							if (abs(a)>=327680) then
+							Z<="0001";
+--							ps <= ST1;
+							elsif((155648<=abs(a)) and (abs(a)<327680)) then 
+							Z<="0010";
+--							ps <= ST1;
+							elsif(65536<=abs(a) and abs(a)<155648) then
+							Z<="0100";
+--							ps <= ST1;
+							elsif(0<=abs(a) and abs(a)<65536) then 
+							Z<="1000";
+--							ps <= ST1;
+							else
+							Z<="0000";
+							ps <= ST0;
+							end if;
+							
+--							if (b < 255) then
+--								b <= b + 1;
+--								ps <= ST1;
+--							else
+--								b <= 0;
+--								ps <= ST0;
+--							end if;
+--							tx_data <= std_logic_vector(to_unsigned(b, tx_data'length));
+							it <= ITC;
+						-- send the result
+						when ITC =>
+							if(Z="0001") then 
+							c<=65536;
+							ps <= ST1;
+							elsif (Z="0010") then 
+							c<=(abs(a)/32) +55296;
+							ps <= ST1;
+							elsif (Z="0100") then
+							c<=(abs(a)/8) +40960;
+							ps <= ST1;
+							elsif (Z="1000") then
+							c<=(abs(a)/4) + 32768;
+							ps <= ST1;
+							else 
+							c<=65536;
+							ps <= ST0;
+							end if;
+    
+							if (a<0) then 
+							c<=65536-c;
+							ps <= ST1;
+							else
+							c<=c;
+							ps <= ST0;
+							end if;
+							report "The value of 'c' is " & integer'image(c);
+							
+						
+						
+						
+						
+						
+						
+							--------------------------------------------------------------------------------------
+--							c <= a + b;																		 -- the famous function
+--							--------------------------------------------------------------------------------------
+--							if (c < 255) then
+--								ps <= ST1;
+--							else
+--								ps <= ST0;
+--							end if;
+							tx_data <= std_logic_vector(to_unsigned(c, tx_data'length));
+							it <= ITS;
+					end case;
+					
+				-- start bit
+				when ST1 =>			
+					tx <= '0';
+					-- wait a x number of clock cycles before continueing
+					if (clk_counter < clk_per_bit-1) then
+						clk_counter <= clk_counter + 1;
+						ps <= ST1;
+					else
+						clk_counter <= 0;
+						ps <= ST2;
+					end if;
+				
+				-- send data bits
+				when ST2 =>
+					-- will only update on change of bit_counter
+					tx <= tx_data(bit_counter);
+					-- wait a x number of clock cycles before continueing
+					if (clk_counter < clk_per_bit-1) then
+						clk_counter <= clk_counter + 1;
+						ps <= ST2;
+					else
+						clk_counter <= 0;
+						
+						if (bit_counter < 7) then
+							bit_counter <= bit_counter + 1;
+							ps <= ST2;
+						else
+							bit_counter <= 0;
+							ps <= ST3;
+						end if;
+					end if;
+				
+				-- stop bits
+				when ST3 =>
+					tx <= '1';
+					-- wait a x number of clock cycles before continueing
+					if (clk_counter < clk_per_bit-1) then
+						clk_counter <= clk_counter + 1;
+						ps <= ST3;
+					else
+						clk_counter <= 0;
+						--ps <= ST0;
+						ps <= FUNC;
+					end if;
+				
+				-- the catch all clause
+				when others =>
+					ps <= ST0;
+			end case;
+		end if;
+	end process tx_proc;
+	
+	with ps select
+		led <=	"00000001" when ST0,
+					"00000011" when ST1, 
+					"00000111" when ST2, 
+					"00001111" when ST3, 
+					"11111111" when others;
+	
+end transmitter_arch;

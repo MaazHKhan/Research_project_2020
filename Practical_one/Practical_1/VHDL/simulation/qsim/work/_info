@@ -1,0 +1,162 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/Documents/Semester_2_2020/EES_424/Practical_1/VHDL/simulation/qsim
+Eprac_one
+Z1 w1598022265
+Z2 DPx8 cyclonev 18 cyclonev_atom_pack 0 22 ^K2eeK[IVbX]]MLcdOEI91
+Z3 DPx8 cyclonev 19 cyclonev_components 0 22 GFL[QAd@dAZF:`jjOGn9>2
+Z4 DPx12 altera_lnsim 23 altera_lnsim_components 0 22 3dzZ?YU_4FC5UU0cTXRET1
+Z5 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
+Z6 DPx6 altera 11 dffeas_pack 0 22 H5F:RRfLz82T3`4>@b7mS3
+Z7 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
+Z8 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z9 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+Z10 DPx6 altera 28 altera_primitives_components 0 22 VSD=32;3391kSOd?PDZYj3
+!i122 27
+R0
+Z11 8Prac_One.vho
+Z12 FPrac_One.vho
+l0
+Z13 L39 1
+Vg<laORN?mci?J5n@VjN??3
+!s100 PXnfHR@_nT7iR]JU_Y1A=1
+Z14 OV;C;2020.1;71
+32
+Z15 !s110 1598022266
+!i10b 1
+Z16 !s108 1598022266.000000
+Z17 !s90 -work|work|Prac_One.vho|
+Z18 !s107 Prac_One.vho|
+!i113 1
+Z19 o-work work
+Z20 tExplicit 1 CvgOpt 0
+Astructure
+R2
+R3
+R4
+R5
+R6
+R7
+R8
+R9
+R10
+Z21 DEx4 work 8 prac_one 0 22 g<laORN?mci?J5n@VjN??3
+!i122 27
+l621
+Z22 L59 7802
+VgK@E?BZBmRP^kE9`DQk3S3
+!s100 ET:?9OdLJ:0<OYW[9dR8J1
+R14
+32
+R15
+!i10b 1
+R16
+R17
+R18
+!i113 1
+R19
+R20
+Eproject
+Z23 w1598020847
+R2
+R3
+R4
+R5
+R6
+R7
+R8
+R9
+R10
+!i122 22
+R0
+R11
+R12
+l0
+R13
+V3iYOM98H??VYP>`MG7`oG2
+!s100 c]hmFfmckK2J7e9G[N<mg3
+R14
+32
+Z24 !s110 1598020848
+!i10b 1
+Z25 !s108 1598020848.000000
+R17
+R18
+!i113 1
+R19
+R20
+Astructure
+R2
+R3
+R4
+R5
+R6
+R7
+R8
+R9
+R10
+DEx4 work 7 project 0 22 3iYOM98H??VYP>`MG7`oG2
+!i122 22
+l621
+R22
+VS[VHZ8Z6TMfkkaizX]FNJ3
+!s100 Q`6ko7YEla8iLNBWJj^KA3
+R14
+32
+R24
+!i10b 1
+R25
+R17
+R18
+!i113 1
+R19
+R20
+Eproject_vhd_vec_tst
+Z26 w1598020845
+R8
+R9
+!i122 23
+R0
+Z27 8Project..vwf.vht
+Z28 FProject..vwf.vht
+l0
+L32 1
+V:KZjmNWeGh0Z4?2aJXH>22
+!s100 J4:4TWd1j4g9bN2fWW>Bd3
+R14
+32
+R24
+!i10b 1
+R25
+Z29 !s90 -work|work|Project..vwf.vht|
+Z30 !s107 Project..vwf.vht|
+!i113 1
+R19
+R20
+Aproject_arch
+R8
+R9
+DEx4 work 19 project_vhd_vec_tst 0 22 :KZjmNWeGh0Z4?2aJXH>22
+!i122 23
+l53
+L34 31
+Vj]iVMJR33:4zhcal5`gRS3
+!s100 6VijVFMWYFzClnBIglE>c1
+R14
+32
+R24
+!i10b 1
+R25
+R29
+R30
+!i113 1
+R19
+R20

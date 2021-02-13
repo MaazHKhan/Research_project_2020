@@ -1,0 +1,17 @@
+# system info Prac_2 on 2020.09.25.10:35:41
+system_info:
+name,value
+DEVICE,5CSEMA4U23C6
+DEVICE_FAMILY,Cyclone V
+GENERATION_ID,1601022940
+#
+#
+# Files generated for Prac_2 on 2020.09.25.10:35:41
+files:
+filepath,kind,attributes,module,is_top
+simulation/Prac_2.vhd,VHDL,,Prac_2,true
+#
+# Map from instance-path to kind of module
+instances:
+instancePath,module
+Prac_2.rs232_0,Prac_2_rs232_0

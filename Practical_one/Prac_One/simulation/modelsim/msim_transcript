@@ -1,0 +1,279 @@
+# Reading pref.tcl
+# do Prac_One_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {D:/Documents/Semester_2_2020/EES_424/Prac_One/Prac_One.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 21:59:34 on Aug 21,2020
+# vcom -reportprogress 300 -93 -work work D:/Documents/Semester_2_2020/EES_424/Prac_One/Prac_One.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity Prac_One
+# -- Compiling architecture behave of Prac_One
+# End time: 21:59:34 on Aug 21,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vcom -93 -work work {D:/Documents/Semester_2_2020/EES_424/Prac_One/simulation/modelsim/Prac_One.vwf.vht}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 21:59:34 on Aug 21,2020
+# vcom -reportprogress 300 -93 -work work D:/Documents/Semester_2_2020/EES_424/Prac_One/simulation/modelsim/Prac_One.vwf.vht 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Prac_One_vhd_vec_tst
+# -- Compiling architecture Prac_One_arch of Prac_One_vhd_vec_tst
+# End time: 21:59:34 on Aug 21,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {D:/Documents/Semester_2_2020/EES_424/Prac_One/Prac_One.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 21:59:34 on Aug 21,2020
+# vcom -reportprogress 300 -93 -work work D:/Documents/Semester_2_2020/EES_424/Prac_One/Prac_One.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity Prac_One
+# -- Compiling architecture behave of Prac_One
+# End time: 21:59:34 on Aug 21,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cyclonev -L rtl_work -L work -voptargs="+acc"  Prac_One
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cyclonev -L rtl_work -L work -voptargs=""+acc"" Prac_One 
+# Start time: 21:59:34 on Aug 21,2020
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.prac_one(behave)
+# Error attempted to pushdown all children on .main_pane.cs.12 mode is tabbed children are paneframes 1
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# Error attempted to pushdown all children on .main_pane.cs.12 mode is tabbed children are paneframes 1
+run
+force -freeze sim:/prac_one/CLOCK_50_in 1 0, 0 {10000 ps} -r 20000
+run
+run
+run
+restart -f
+run
+# GetModuleFileName: The specified module could not be found.
+# 
+# 
+force -drive sim:/prac_one/EN 1 0
+run
+force -freeze sim:/prac_one/CLOCK_50_in 1 0, 0 {10000 ps} -r 20000
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+force -freeze sim:/prac_one/CLOCK_50_in 1 0, 0 {50 ps} -r 100
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+noforce sim:/prac_one/EN
+force -drive sim:/prac_one/EN 0 0
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run

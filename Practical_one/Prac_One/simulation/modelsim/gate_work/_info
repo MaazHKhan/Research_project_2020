@@ -1,0 +1,124 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/Documents/Semester_2_2020/EES_424/Prac_One/simulation/modelsim
+Eprac_one
+Z1 w1598022501
+Z2 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z4 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 2
+R0
+Z5 8D:/Documents/Semester_2_2020/EES_424/Prac_One/Prac_One.vhd
+Z6 FD:/Documents/Semester_2_2020/EES_424/Prac_One/Prac_One.vhd
+l0
+L6 1
+V3ImzKgFjO[c4WLCV=Z25M2
+!s100 66MRbLhHfQ1a_`<B=LWoU0
+Z7 OV;C;2020.1;71
+31
+Z8 !s110 1598023244
+!i10b 1
+Z9 !s108 1598023244.000000
+Z10 !s90 -reportprogress|300|-93|-work|work|D:/Documents/Semester_2_2020/EES_424/Prac_One/Prac_One.vhd|
+!s107 D:/Documents/Semester_2_2020/EES_424/Prac_One/Prac_One.vhd|
+!i113 1
+Z11 o-93 -work work
+Z12 tExplicit 1 CvgOpt 0
+Abehave
+R2
+R3
+R4
+DEx4 work 8 prac_one 0 22 3ImzKgFjO[c4WLCV=Z25M2
+!i122 2
+l50
+L30 285
+VX[?5daJA4PmHTLiJNeIEC0
+!s100 >bhn9N8f5mK<;@2RJhZH33
+R7
+31
+R8
+!i10b 1
+R9
+R10
+Z13 !s107 D:/Documents/Semester_2_2020/EES_424/Prac_One/Prac_One.vhd|
+!i113 1
+R11
+R12
+Astructure
+DPx8 cyclonev 18 cyclonev_atom_pack 0 22 ^K2eeK[IVbX]]MLcdOEI91
+DPx8 cyclonev 19 cyclonev_components 0 22 GFL[QAd@dAZF:`jjOGn9>2
+DPx12 altera_lnsim 23 altera_lnsim_components 0 22 3dzZ?YU_4FC5UU0cTXRET1
+DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
+DPx6 altera 11 dffeas_pack 0 22 H5F:RRfLz82T3`4>@b7mS3
+DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
+R3
+R4
+DPx6 altera 28 altera_primitives_components 0 22 VSD=32;3391kSOd?PDZYj3
+DEx4 work 8 prac_one 0 22 `D1PKd>f[YM48=Di;6Ya11
+!i122 0
+l615
+L59 7725
+VLdLWo0[EanJ6k2>3C@c`Z0
+!s100 V6E`cJD=H@FZUGn75<Cl01
+R7
+31
+R8
+!i10b 1
+R9
+!s90 -reportprogress|300|-93|-work|work|Prac_One.vho|
+!s107 Prac_One.vho|
+!i113 1
+R11
+R12
+FPrac_One.vho
+w1598022568
+8Prac_One.vho
+Eprac_one_vhd_vec_tst
+Z14 w1598023222
+R3
+R4
+!i122 1
+R0
+Z15 8D:/Documents/Semester_2_2020/EES_424/Prac_One/simulation/modelsim/Prac_One.vwf.vht
+Z16 FD:/Documents/Semester_2_2020/EES_424/Prac_One/simulation/modelsim/Prac_One.vwf.vht
+l0
+L32 1
+V`7RVmkdT^?>UzM^PHj<jl1
+!s100 c:@eOd>RQ==MALK1h]nFO3
+R7
+31
+R8
+!i10b 1
+R9
+Z17 !s90 -reportprogress|300|-93|-work|work|D:/Documents/Semester_2_2020/EES_424/Prac_One/simulation/modelsim/Prac_One.vwf.vht|
+Z18 !s107 D:/Documents/Semester_2_2020/EES_424/Prac_One/simulation/modelsim/Prac_One.vwf.vht|
+!i113 1
+R11
+R12
+Aprac_one_arch
+R3
+R4
+DEx4 work 20 prac_one_vhd_vec_tst 0 22 `7RVmkdT^?>UzM^PHj<jl1
+!i122 1
+l53
+L34 31
+V1_jaPIeD1WgQQVD3Y8E^^2
+!s100 C1i8kJ4fQK45UEcG71X@S0
+R7
+31
+R8
+!i10b 1
+R9
+R17
+R18
+!i113 1
+R11
+R12

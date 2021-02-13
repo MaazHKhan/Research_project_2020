@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<simPackage>
+ <file path="simulation/Prac_2.vhd" type="VHDL" />
+ <topLevel name="Prac_2" />
+ <deviceFamily name="cyclonev" />
+</simPackage>

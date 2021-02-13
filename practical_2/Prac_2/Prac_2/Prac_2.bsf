@@ -1,0 +1,149 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 2020  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+*/
+(header "symbol" (version "1.1"))
+(symbol
+	(rect 0 0 432 288)
+	(text "Prac_2" (rect 195 -1 224 11)(font "Arial" (font_size 10)))
+	(text "inst" (rect 8 272 20 284)(font "Arial" ))
+	(port
+		(pt 0 72)
+		(input)
+		(text "clk" (rect 0 0 10 12)(font "Arial" (font_size 8)))
+		(text "clk" (rect 4 61 22 72)(font "Arial" (font_size 8)))
+		(line (pt 0 72)(pt 176 72)(line_width 1))
+	)
+	(port
+		(pt 0 112)
+		(input)
+		(text "reset" (rect 0 0 20 12)(font "Arial" (font_size 8)))
+		(text "reset" (rect 4 101 34 112)(font "Arial" (font_size 8)))
+		(line (pt 0 112)(pt 176 112)(line_width 1))
+	)
+	(port
+		(pt 0 152)
+		(input)
+		(text "UART_RXD" (rect 0 0 56 12)(font "Arial" (font_size 8)))
+		(text "UART_RXD" (rect 4 141 52 152)(font "Arial" (font_size 8)))
+		(line (pt 0 152)(pt 176 152)(line_width 1))
+	)
+	(port
+		(pt 432 72)
+		(input)
+		(text "from_uart_ready" (rect 0 0 70 12)(font "Arial" (font_size 8)))
+		(text "from_uart_ready" (rect 346 61 436 72)(font "Arial" (font_size 8)))
+		(line (pt 432 72)(pt 256 72)(line_width 1))
+	)
+	(port
+		(pt 0 208)
+		(input)
+		(text "to_uart_data[7..0]" (rect 0 0 70 12)(font "Arial" (font_size 8)))
+		(text "to_uart_data[7..0]" (rect 4 197 112 208)(font "Arial" (font_size 8)))
+		(line (pt 0 208)(pt 176 208)(line_width 3))
+	)
+	(port
+		(pt 0 224)
+		(input)
+		(text "to_uart_error" (rect 0 0 54 12)(font "Arial" (font_size 8)))
+		(text "to_uart_error" (rect 4 213 82 224)(font "Arial" (font_size 8)))
+		(line (pt 0 224)(pt 176 224)(line_width 1))
+	)
+	(port
+		(pt 0 240)
+		(input)
+		(text "to_uart_valid" (rect 0 0 51 12)(font "Arial" (font_size 8)))
+		(text "to_uart_valid" (rect 4 229 82 240)(font "Arial" (font_size 8)))
+		(line (pt 0 240)(pt 176 240)(line_width 1))
+	)
+	(port
+		(pt 0 168)
+		(output)
+		(text "UART_TXD" (rect 0 0 54 12)(font "Arial" (font_size 8)))
+		(text "UART_TXD" (rect 4 157 52 168)(font "Arial" (font_size 8)))
+		(line (pt 0 168)(pt 176 168)(line_width 1))
+	)
+	(port
+		(pt 432 88)
+		(output)
+		(text "from_uart_data[7..0]" (rect 0 0 83 12)(font "Arial" (font_size 8)))
+		(text "from_uart_data[7..0]" (rect 329 77 449 88)(font "Arial" (font_size 8)))
+		(line (pt 432 88)(pt 256 88)(line_width 3))
+	)
+	(port
+		(pt 432 104)
+		(output)
+		(text "from_uart_error" (rect 0 0 67 12)(font "Arial" (font_size 8)))
+		(text "from_uart_error" (rect 350 93 440 104)(font "Arial" (font_size 8)))
+		(line (pt 432 104)(pt 256 104)(line_width 1))
+	)
+	(port
+		(pt 432 120)
+		(output)
+		(text "from_uart_valid" (rect 0 0 64 12)(font "Arial" (font_size 8)))
+		(text "from_uart_valid" (rect 352 109 442 120)(font "Arial" (font_size 8)))
+		(line (pt 432 120)(pt 256 120)(line_width 1))
+	)
+	(port
+		(pt 0 256)
+		(output)
+		(text "to_uart_ready" (rect 0 0 57 12)(font "Arial" (font_size 8)))
+		(text "to_uart_ready" (rect 4 245 82 256)(font "Arial" (font_size 8)))
+		(line (pt 0 256)(pt 176 256)(line_width 1))
+	)
+	(drawing
+		(text "clk" (rect 161 43 340 99)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "clk" (rect 181 67 380 144)(font "Arial" (color 0 0 0)))
+		(text "reset" (rect 147 83 324 179)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "reset" (rect 181 107 392 224)(font "Arial" (color 0 0 0)))
+		(text "external_interface" (rect 72 123 252 259)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "RXD" (rect 181 147 380 304)(font "Arial" (color 0 0 0)))
+		(text "TXD" (rect 181 163 380 336)(font "Arial" (color 0 0 0)))
+		(text "avalon_data_receive_source" (rect 257 43 670 99)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "ready" (rect 228 67 486 144)(font "Arial" (color 0 0 0)))
+		(text "data" (rect 235 83 494 176)(font "Arial" (color 0 0 0)))
+		(text "error" (rect 231 99 492 208)(font "Arial" (color 0 0 0)))
+		(text "valid" (rect 233 115 496 240)(font "Arial" (color 0 0 0)))
+		(text "avalon_data_transmit_sink" (rect 19 179 188 371)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "data" (rect 181 203 386 416)(font "Arial" (color 0 0 0)))
+		(text "error" (rect 181 219 392 448)(font "Arial" (color 0 0 0)))
+		(text "valid" (rect 181 235 392 480)(font "Arial" (color 0 0 0)))
+		(text "ready" (rect 181 251 392 512)(font "Arial" (color 0 0 0)))
+		(text " system " (rect 397 272 842 554)(font "Arial" ))
+		(line (pt 176 32)(pt 256 32)(line_width 1))
+		(line (pt 256 32)(pt 256 272)(line_width 1))
+		(line (pt 176 272)(pt 256 272)(line_width 1))
+		(line (pt 176 32)(pt 176 272)(line_width 1))
+		(line (pt 177 52)(pt 177 76)(line_width 1))
+		(line (pt 178 52)(pt 178 76)(line_width 1))
+		(line (pt 177 92)(pt 177 116)(line_width 1))
+		(line (pt 178 92)(pt 178 116)(line_width 1))
+		(line (pt 177 132)(pt 177 172)(line_width 1))
+		(line (pt 178 132)(pt 178 172)(line_width 1))
+		(line (pt 255 52)(pt 255 124)(line_width 1))
+		(line (pt 254 52)(pt 254 124)(line_width 1))
+		(line (pt 177 188)(pt 177 260)(line_width 1))
+		(line (pt 178 188)(pt 178 260)(line_width 1))
+		(line (pt 0 0)(pt 432 0)(line_width 1))
+		(line (pt 432 0)(pt 432 288)(line_width 1))
+		(line (pt 0 288)(pt 432 288)(line_width 1))
+		(line (pt 0 0)(pt 0 288)(line_width 1))
+	)
+)

@@ -1,0 +1,6 @@
+
+State Machine - |Prac_One|State
+Name State.Tx State.Func State.Gen 
+State.Gen 0 0 0 
+State.Func 0 1 1 
+State.Tx 1 0 1 
